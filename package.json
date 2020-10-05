@@ -1,0 +1,23 @@
+{
+  "name": "interview-exercise",
+  "version": "1.0.0",
+  "description": "Interview Exercise",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matix-eb/interview-exercise.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/matix-eb/interview-exercise/issues"
+  },
+  "homepage": "https://github.com/matix-eb/interview-exercise#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
