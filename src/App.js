@@ -12,9 +12,9 @@ export default function App() {
     });
 
     return (
-        <>
+        <section className="eds-l-mar-all-4">
             <h1>This is your App ! Yay</h1>
             <p>{serverMessage}</p>
-        </>
+        </section>
     );
 }
