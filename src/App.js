@@ -1,5 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function App() {
-    return <h1>This is your App !</h1>;
+    const [serverMessage, setServerMessage] = useState('Calling API...');
+
+    useEffect(() => {
+        fetch('./api').then(
+            response => response.json()
+        ).then(
+            payload => setServerMessage(payload.message)
+        );
+    });
+
+    return (
+        <>
+            <h1>This is your App ! Yay</h1>
+            <p>{serverMessage}</p>
+        </>
+    );
 }
