@@ -9,7 +9,7 @@ export default function App() {
         ).then(
             payload => setServerMessage(payload.message)
         );
-    });
+    }, []);
 
     return (
         <section className="eds-l-mar-all-4">
