@@ -38,3 +38,17 @@ Make sure both these ports are available when you run the app.
 - `src/index.js`: The javascript entry point of the app, it only contains logic to render the App main react component.
 - `src/App.js`: The App main react component, contains a simple example of how to call the API server.
 - `server/index.js`: The API server logic, runs alongside `webpack-dev-server` when you run `npm start`, you can add endpoints if you need. The server will be re-run when you change this file. You might have to refresh the page manually to see the API changes take effect on the app.
+
+## Exercise Guidelines
+
+Build checkout! As you know, Eventbrite is an events platform where creators create events and consumers can purchase tickets to those events (the latter is the side you're likely more familiar with). We don't expect you to build out our entire checkout flow, but let's start you out by building a simple modal for an event where:
+- A user can select the number of tickets they want to purchase
+- Click `Place Order` to make a purchase
+
+
+### Resources
+
+- [QA event to use as a model](https://www.evbqa.com/e/principal-fe-interview-tickets-82187949369)
+- [API docs and access to an API key](https://www.eventbrite.com/platform/)
+- [Orders documentation](https://www.eventbrite.com/platform/docs/orders)
+    * Only our `GET` endpoints are public and you can access those above but you'll need to mock out the `POST` request for the order
