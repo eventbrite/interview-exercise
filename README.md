@@ -41,8 +41,9 @@ Make sure both these ports are available when you run the app.
 
 ## Exercise Guidelines
 
-Build checkout! As you know, Eventbrite is an events platform where creators create events and consumers can purchase tickets to those events (the latter is the side you're likely more familiar with). We don't expect you to build out our entire checkout flow, but let's start you out by building a simple modal for an event where:
+Build a checkout experience! As you know, Eventbrite is an events platform where creators create events and consumers can purchase tickets to those events (the latter is the side you're likely more familiar with). We don't expect you to build out our entire checkout flow, but let's start by building a simple modal for an event where:
 - A user can select the number of tickets they want to purchase
+- `Checkout` with those tickets
 - Click `Place Order` to make a purchase
 
 
@@ -51,4 +52,4 @@ Build checkout! As you know, Eventbrite is an events platform where creators cre
 - [QA event to use as a model](https://www.evbqa.com/e/principal-fe-interview-tickets-82187949369)
 - [API docs and access to an API key](https://www.eventbrite.com/platform/)
 - [Orders documentation](https://www.eventbrite.com/platform/docs/orders)
-    * Only our `GET` endpoints are public and you can access those above but you'll need to mock out the `POST` request for the order
+    * Only our `GET` endpoint for orders are public and you can access those above but you'll need to mock out the `POST` request for the order
