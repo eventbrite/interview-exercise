@@ -37,4 +37,4 @@ Make sure both these ports are available when you run the app.
 - `index.html`: This is the main page for the app, it loads the javascript and css resources for the app. We provide `eds.css`, our internal css boilerplate, feel free to remove if not familiarized.
 - `src/index.js`: The javascript entry point of the app, it only contains logic to render the App main react component.
 - `src/App.js`: The App main react component, contains a simple example of how to call the API server.
-- `server/index.js`: The API server logic, runs alongside webpack-dev-server when run run `npm start`, you can add endpoints if you need. The server will be re-run when you change this file. You might have to refresh the page manually to see the API changes take effect on the app.
+- `server/index.js`: The API server logic, runs alongside `webpack-dev-server` when you run `npm start`, you can add endpoints if you need. The server will be re-run when you change this file. You might have to refresh the page manually to see the API changes take effect on the app.
