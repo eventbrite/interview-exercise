@@ -42,10 +42,26 @@ Make sure both these ports are available when you run the app.
 ## Exercise Guidelines
 
 Build a checkout experience! As you know, Eventbrite is an events platform where creators create events and consumers can purchase tickets to those events (the latter is the side you're likely more familiar with). We don't expect you to build out our entire checkout flow, but let's start by building a simple modal for an event where:
-- A user can select the number of tickets they want to purchase
-- `Checkout` with those tickets
-- Click `Place Order` to make a purchase
+- Step 1:
+    - Display the name, date, and event image from the `Event` object
+    ![Image of Event Header](https://user-images.githubusercontent.com/41654211/95794865-c33ebe80-0c9d-11eb-9089-505e4f3ec94d.png)
+    - List the ticket classes available for purchase
+    ![Image of Tickets](https://user-images.githubusercontent.com/41654211/95794917-e79a9b00-0c9d-11eb-861c-fbf67a741e1b.png)
+    - Enable a selection of 1-10 tickets per ticket class (you can ignore the min and max on the ticket classes)
+    ![Image of Ticket Dropdown](https://user-images.githubusercontent.com/41654211/95794955-fd0fc500-0c9d-11eb-8b0c-00cd56b10b62.png)
+    - Dynamically show the tickets being selected
+    - Dynamically calculate the `Total` computed from the `cost + fee + tax` on the ticket class object
+    ![Image of Order Summary](https://user-images.githubusercontent.com/41654211/95794992-1add2a00-0c9e-11eb-9255-2e17247c90f1.png)
 
+- Step 2:
+    - Click the `Checkout` button
+    ![Image of Checkout](https://user-images.githubusercontent.com/41654211/95795070-524bd680-0c9e-11eb-8988-279abe0d6f22.png)
+    - Mock the API `POST` request to place an order. This should include the name and email of the attendee, the ticket classes, and cost breakdown.
+    - Navigate to a confirmation screen once the request is successful
+
+- Step 3:
+    - Think about what one thing you would do to improve the first page of our checkout flow (we'll talk about this more during the TPS).
+    ![Image of Checkout Flow](https://user-images.githubusercontent.com/41654211/95795176-917a2780-0c9e-11eb-8af0-72571f8005dc.png)
 
 ### Resources
 
